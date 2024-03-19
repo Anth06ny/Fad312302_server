@@ -29,9 +29,8 @@ class MyRestController(val teacherService: TeacherService) {
         println("/addTeacher name=$name code=code")
 
         teacherService.createTeacher(name, code)
-//
-//        return  teacherService.getAll()
-        return listOf()
+
+        return  teacherService.getAll()
     }
 
     /* -------------------------------- */
